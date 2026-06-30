@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ConsoleAppLoadTests/ConsoleAppLoadTests.csproj" />
+  <Project Path="WebApiExample/WebApiExample.csproj" />
+</Solution>

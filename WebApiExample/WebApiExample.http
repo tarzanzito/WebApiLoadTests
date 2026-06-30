@@ -1,0 +1,12 @@
+@WebApplication2_HostAddress = https://localhost:7195
+
+
+GET {{WebApplication2_HostAddress}}/GetSync/1
+Accept: application/json
+
+###
+
+GET {{WebApplication2_HostAddress}}/GetAsync/1
+Accept: application/json
+ 
+###
