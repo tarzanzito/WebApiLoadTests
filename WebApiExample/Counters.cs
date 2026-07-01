@@ -30,7 +30,11 @@ namespace WebApplication2
             ////{
             ////    temp = _counter;
             ////}
-            return _counter;
+            ///
+
+            int temp = Interlocked.CompareExchange(ref _counter, 0, 0);
+
+            return temp;
         }
 
         internal static void IncrementActives()
@@ -50,7 +54,10 @@ namespace WebApplication2
             //{
             //    temp = _actives;
             //}
-            return _actives;
+
+            int temp = Interlocked.CompareExchange(ref _actives, 0, 0);
+
+            return temp;
         }
     }
 }

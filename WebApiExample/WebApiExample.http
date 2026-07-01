@@ -1,12 +1,27 @@
-@WebApplication2_HostAddress = https://localhost:7195
+@WebApplication_HostAddress = https://localhost:7195
 
 
-GET {{WebApplication2_HostAddress}}/GetSync/1
+GET {{WebApplication_HostAddress}}/GetRouteSync/121
 Accept: application/json
 
 ###
 
-GET {{WebApplication2_HostAddress}}/GetAsync/1
+GET {{WebApplication_HostAddress}}/GetRouteAsync/99
 Accept: application/json
  
+###
+
+GET {{WebApplication_HostAddress}}/GetQueryStringAsync?id=11
+Accept: application/json
+ 
+###
+
+GET {{WebApplication_HostAddress}}/GetBodyAsync?id=22
+Accept: application/json
+
+###
+
+GET {{WebApplication_HostAddress}}/GetSimpleAsync/=33
+Accept: application/json
+
 ###
